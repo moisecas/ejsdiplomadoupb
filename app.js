@@ -32,8 +32,8 @@ app.get('/usuarios', (req, res) => {
 
 //ver usuarios en usuarios.ejs
 app.get('/usuariosejs', (req, res) => {
-    res.render("user", { titulo: "usuarios", users: usuarios })
-    console.log(usuarios);
+    res.render("user", {users: usuarios })
+    
 })
 
 //post para crear usuarios

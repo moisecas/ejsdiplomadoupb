@@ -10,6 +10,26 @@
 <body>
     <H1>USUARIOS REGISTRADOS</H1>
     <h2>usuarios</h2>
-    <h1> <%= users  %>  </h1> 
+    <table border="1">
+        <tr>
+            <th>ID </th>
+            <th> NAME</th>
+            <th> APELLIDO</th>
+            <th> AGE</th>
+            <th> CARGO</th>
+        
+           
+        </tr>
+        <% for (i=0; i < users.length; i++){ %>
+        <tr>
+            <td><%= users[i].id %></td> 
+            <td><%= users[i].Name %></td>
+            <td><%= users[i].Apellido %></td>
+            <td><%= users[i].Age %></td>
+            <td><%= users[i].Cargo %></td>
+
+        <% } %>  
+    </table>
+    
 </body>
 </html>
